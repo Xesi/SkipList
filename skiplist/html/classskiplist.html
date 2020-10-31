@@ -1,0 +1,693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>skiplist: Шаблон класса skiplist&lt; T, Skip_Factor &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">skiplist
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classskiplist-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Шаблон класса skiplist&lt; T, Skip_Factor &gt;</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>вероятностная структура данных, которая содержит упорядоченный набор уникальных объектов.  
+ <a href="classskiplist.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="skiplist_8h_source.html">skiplist.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classskiplist_1_1_iterator.html">Iterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">позволяет однонапрявленно итерироваться по контейнеру skiplist.  <a href="classskiplist_1_1_iterator.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a8ffa07fe78f36d56cf71ae1424e5595f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classskiplist.html#a8ffa07fe78f36d56cf71ae1424e5595f">skiplist</a> ()</td></tr>
+<tr class="memdesc:a8ffa07fe78f36d56cf71ae1424e5595f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Умолчательный конструктор.  <a href="classskiplist.html#a8ffa07fe78f36d56cf71ae1424e5595f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8ffa07fe78f36d56cf71ae1424e5595f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeca12848c16796e5e53e952429610765"><td class="memItemLeft" align="right" valign="top"><a id="aeca12848c16796e5e53e952429610765"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classskiplist.html#aeca12848c16796e5e53e952429610765">~skiplist</a> ()</td></tr>
+<tr class="memdesc:aeca12848c16796e5e53e952429610765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор экземпляра, освобождает память. <br /></td></tr>
+<tr class="separator:aeca12848c16796e5e53e952429610765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e53ef59bfbc54edb701de7bb69d004"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classskiplist.html#a58e53ef59bfbc54edb701de7bb69d004">skiplist</a> (const <a class="el" href="classskiplist.html">skiplist</a> &amp;)</td></tr>
+<tr class="memdesc:a58e53ef59bfbc54edb701de7bb69d004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Копирующий конструктор.  <a href="classskiplist.html#a58e53ef59bfbc54edb701de7bb69d004">Подробнее...</a><br /></td></tr>
+<tr class="separator:a58e53ef59bfbc54edb701de7bb69d004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92fab9817c138a9e0bd2433f176e7d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classskiplist.html">skiplist</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classskiplist.html#ab92fab9817c138a9e0bd2433f176e7d0">operator=</a> (const <a class="el" href="classskiplist.html">skiplist</a> &amp;)</td></tr>
+<tr class="memdesc:ab92fab9817c138a9e0bd2433f176e7d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор присваивания.  <a href="classskiplist.html#ab92fab9817c138a9e0bd2433f176e7d0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab92fab9817c138a9e0bd2433f176e7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d09f2e3ee43cd10b429d3c54c466ee"><td class="memTemplParams" colspan="2">template&lt;typename InputIt &gt; </td></tr>
+<tr class="memitem:ad5d09f2e3ee43cd10b429d3c54c466ee"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classskiplist.html#ad5d09f2e3ee43cd10b429d3c54c466ee">skiplist</a> (InputIt first, InputIt last)</td></tr>
+<tr class="memdesc:ad5d09f2e3ee43cd10b429d3c54c466ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">конструктор, принимающий в качестве параметров два итератора.  <a href="classskiplist.html#ad5d09f2e3ee43cd10b429d3c54c466ee">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad5d09f2e3ee43cd10b429d3c54c466ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d4579e615f3e1b94146cac95c5ce51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classskiplist_1_1_iterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classskiplist.html#a95d4579e615f3e1b94146cac95c5ce51">begin</a> () const</td></tr>
+<tr class="memdesc:a95d4579e615f3e1b94146cac95c5ce51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает итератор на первый элемент  <a href="classskiplist.html#a95d4579e615f3e1b94146cac95c5ce51">Подробнее...</a><br /></td></tr>
+<tr class="separator:a95d4579e615f3e1b94146cac95c5ce51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaea95e93dde5788e11961fe6f38d4603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classskiplist_1_1_iterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classskiplist.html#aaea95e93dde5788e11961fe6f38d4603">end</a> () const</td></tr>
+<tr class="memdesc:aaea95e93dde5788e11961fe6f38d4603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает итератор на элемент, следующий за последним  <a href="classskiplist.html#aaea95e93dde5788e11961fe6f38d4603">Подробнее...</a><br /></td></tr>
+<tr class="separator:aaea95e93dde5788e11961fe6f38d4603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0983046065fb82bf3eec40df9edc810"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classskiplist_1_1_iterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classskiplist.html#ab0983046065fb82bf3eec40df9edc810">lower_bound</a> (const T &amp;) const</td></tr>
+<tr class="memdesc:ab0983046065fb82bf3eec40df9edc810"><td class="mdescLeft">&#160;</td><td class="mdescRight">возвращает итератор на первый элемент не меньше, чем заданное значение  <a href="classskiplist.html#ab0983046065fb82bf3eec40df9edc810">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab0983046065fb82bf3eec40df9edc810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483e6e58b1416998a0383c10083d4f6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classskiplist_1_1_iterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classskiplist.html#a483e6e58b1416998a0383c10083d4f6b">upper_bound</a> (const T &amp;) const</td></tr>
+<tr class="memdesc:a483e6e58b1416998a0383c10083d4f6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">возвращает итератор на первый элемент больше, чем определенное значение  <a href="classskiplist.html#a483e6e58b1416998a0383c10083d4f6b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a483e6e58b1416998a0383c10083d4f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae19751fe09d8d0aa793e2b5974657104"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classskiplist.html#ae19751fe09d8d0aa793e2b5974657104">empty</a> () const</td></tr>
+<tr class="memdesc:ae19751fe09d8d0aa793e2b5974657104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет отсутствие элементов в контейнере  <a href="classskiplist.html#ae19751fe09d8d0aa793e2b5974657104">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae19751fe09d8d0aa793e2b5974657104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e16d27329aa9b39e39e7f27ef72a3d"><td class="memItemLeft" align="right" valign="top">std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classskiplist.html#a56e16d27329aa9b39e39e7f27ef72a3d">size</a> () const</td></tr>
+<tr class="memdesc:a56e16d27329aa9b39e39e7f27ef72a3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает количество элементов в контейнере.  <a href="classskiplist.html#a56e16d27329aa9b39e39e7f27ef72a3d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a56e16d27329aa9b39e39e7f27ef72a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330faf3f2fb473711e951ffc27a7fe5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classskiplist.html#a330faf3f2fb473711e951ffc27a7fe5e">clear</a> ()</td></tr>
+<tr class="memdesc:a330faf3f2fb473711e951ffc27a7fe5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очищает контейнер  <a href="classskiplist.html#a330faf3f2fb473711e951ffc27a7fe5e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a330faf3f2fb473711e951ffc27a7fe5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f1ad468d8a3c7fdf352dad7e0cd6caa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classskiplist_1_1_iterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classskiplist.html#a6f1ad468d8a3c7fdf352dad7e0cd6caa">find</a> (const T &amp;) const</td></tr>
+<tr class="memdesc:a6f1ad468d8a3c7fdf352dad7e0cd6caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">находит элемент с заданным ключом  <a href="classskiplist.html#a6f1ad468d8a3c7fdf352dad7e0cd6caa">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6f1ad468d8a3c7fdf352dad7e0cd6caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a22e8412f14e8427d1a5166faaf3b3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classskiplist_1_1_iterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classskiplist.html#a8a22e8412f14e8427d1a5166faaf3b3d">insert</a> (const T &amp;)</td></tr>
+<tr class="memdesc:a8a22e8412f14e8427d1a5166faaf3b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вставляет элемент  <a href="classskiplist.html#a8a22e8412f14e8427d1a5166faaf3b3d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8a22e8412f14e8427d1a5166faaf3b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f44ccbc9ef1ad024bf744944ed7ea98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classskiplist_1_1_iterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classskiplist.html#a1f44ccbc9ef1ad024bf744944ed7ea98">erase</a> (const T &amp;)</td></tr>
+<tr class="memdesc:a1f44ccbc9ef1ad024bf744944ed7ea98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет элемент  <a href="classskiplist.html#a1f44ccbc9ef1ad024bf744944ed7ea98">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1f44ccbc9ef1ad024bf744944ed7ea98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa249b6d835f8ebd73a6d5b63e95257dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classskiplist_1_1_iterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classskiplist.html#aa249b6d835f8ebd73a6d5b63e95257dd">erase</a> (<a class="el" href="classskiplist_1_1_iterator.html">Iterator</a>)</td></tr>
+<tr class="memdesc:aa249b6d835f8ebd73a6d5b63e95257dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет элемент  <a href="classskiplist.html#aa249b6d835f8ebd73a6d5b63e95257dd">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa249b6d835f8ebd73a6d5b63e95257dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84d74ca6a124a66789e225a3e5bd3002"><td class="memItemLeft" align="right" valign="top">std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classskiplist.html#a84d74ca6a124a66789e225a3e5bd3002">count</a> (const T &amp;) const</td></tr>
+<tr class="memdesc:a84d74ca6a124a66789e225a3e5bd3002"><td class="mdescLeft">&#160;</td><td class="mdescRight">находит количество элементов по ключу  <a href="classskiplist.html#a84d74ca6a124a66789e225a3e5bd3002">Подробнее...</a><br /></td></tr>
+<tr class="separator:a84d74ca6a124a66789e225a3e5bd3002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><h3>template&lt;typename T, size_t Skip_Factor = 2&gt;<br />
+class skiplist&lt; T, Skip_Factor &gt;</h3>
+
+<p>вероятностная структура данных, которая содержит упорядоченный набор уникальных объектов. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">T</td><td>- тип, хранимый в структуре </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Skip_Factor</td><td>- основание дроби 1/Skip_Factor - вероятности появления нового уровня у узла в списке</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>skiplist - вероятностная структура данных, которая содержит упорядоченный набор уникальных объектов типа <b>T</b>. Операции поиска, удаления и вставки имеют логарифмическую сложность. В основе списка с пропусками лежит расширение отсортированного связного списка дополнительными связями, добавленными в случайных путях с биномиальным распределением, чтобы поиск по списку мог быстро пропускать части этого списка.</p>
+<p><img src="image1.png" alt="схема" class="inline"/></p>
+<p>Нижний слой — это обычный упорядоченный связный список. Каждый более высокий слой представляет собой «выделенную полосу движения» для списков ниже, где элемент в i-м слое появляется в i+1-м слое с вероятностью <b>1/Skip_Factor</b>.</p>
+<p>Без указания значения <b>Skip_Factor</b> равен 2. При операции поиска, вставки и удаления ожидаемое число шагов в каждом связном списке от места начала в текущем списке до места перехода на более низкий уровень равно значению Skip_Factor. общие ожидаемые затраты на поиск — \(log_p n * p\), где p - шаблонный параметр Skip_Factor. Асимптотика O(log(n)), так как p является константным значением. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a8ffa07fe78f36d56cf71ae1424e5595f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ffa07fe78f36d56cf71ae1424e5595f">&#9670;&nbsp;</a></span>skiplist() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t p&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::<a class="el" href="classskiplist.html">skiplist</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Умолчательный конструктор. </p>
+<p>Создает пустой список. </p>
+
+</div>
+</div>
+<a id="a58e53ef59bfbc54edb701de7bb69d004"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58e53ef59bfbc54edb701de7bb69d004">&#9670;&nbsp;</a></span>skiplist() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t Skip_Factor = 2&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classskiplist.html">skiplist</a>&lt; T, Skip_Factor &gt;::<a class="el" href="classskiplist.html">skiplist</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classskiplist.html">skiplist</a>&lt; T, Skip_Factor &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Копирующий конструктор. </p>
+<p>Создается новый список с пропусками с идентичным набором элементов. Внутреннее строение полностью меняется в связи с рандомизированным принципом построения. </p>
+
+</div>
+</div>
+<a id="ad5d09f2e3ee43cd10b429d3c54c466ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d09f2e3ee43cd10b429d3c54c466ee">&#9670;&nbsp;</a></span>skiplist() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t Skip_Factor = 2&gt; </div>
+<div class="memtemplate">
+template&lt;typename InputIt &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classskiplist.html">skiplist</a>&lt; T, Skip_Factor &gt;::<a class="el" href="classskiplist.html">skiplist</a> </td>
+          <td>(</td>
+          <td class="paramtype">InputIt&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InputIt&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>конструктор, принимающий в качестве параметров два итератора. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">first</td><td>итератор, указывающий на первый элемент упорядоченного набора элементов </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">last</td><td>итератор, указывающий на элемент после последнего в упорядоченном наборе элементов</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Позволяет создавать список с пропусками от другого контейнера c упорядоченным набором элементов. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a95d4579e615f3e1b94146cac95c5ce51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95d4579e615f3e1b94146cac95c5ce51">&#9670;&nbsp;</a></span>begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t p&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::<a class="el" href="classskiplist_1_1_iterator.html">Iterator</a> <a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::begin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает итератор на первый элемент </p>
+<p>При пустом контейнере возвращает итератор за конец (см. <a class="el" href="classskiplist.html#aaea95e93dde5788e11961fe6f38d4603" title="Возвращает итератор на элемент, следующий за последним">end()</a>). </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(Нет)</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="classskiplist_1_1_iterator.html" title="позволяет однонапрявленно итерироваться по контейнеру skiplist.">Iterator</a></td><td>на первый элемент</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Сложность</b><br  />
+ O(logN), где N - количество элементов в контейнере. </p>
+
+</div>
+</div>
+<a id="a330faf3f2fb473711e951ffc27a7fe5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a330faf3f2fb473711e951ffc27a7fe5e">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t p&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::clear</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Очищает контейнер </p>
+<p>Делает недействительными все ссылки, указатели или итераторы указывающие на удалённые элементы. <br  />
+<br  />
+<b>Сложность</b><br  />
+ линейная от размера контейнера. </p>
+
+</div>
+</div>
+<a id="a84d74ca6a124a66789e225a3e5bd3002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84d74ca6a124a66789e225a3e5bd3002">&#9670;&nbsp;</a></span>count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t p&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ptrdiff_t <a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::count </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>находит количество элементов по ключу </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>- значение ключа </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">количество</td><td>элементов с ключом value</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Сложность</b><br  />
+ O(logN), где N - количество элементов в контейнере </p>
+
+</div>
+</div>
+<a id="ae19751fe09d8d0aa793e2b5974657104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae19751fe09d8d0aa793e2b5974657104">&#9670;&nbsp;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t p&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::empty</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет отсутствие элементов в контейнере </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(Нет)</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td><b>true</b>, если контейнер пуст, <b>false</b> иначе</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Сложность</b><br  />
+ константная. </p>
+
+</div>
+</div>
+<a id="aaea95e93dde5788e11961fe6f38d4603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaea95e93dde5788e11961fe6f38d4603">&#9670;&nbsp;</a></span>end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t p&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::<a class="el" href="classskiplist_1_1_iterator.html">Iterator</a> <a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::end</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает итератор на элемент, следующий за последним </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(Нет)</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="classskiplist_1_1_iterator.html" title="позволяет однонапрявленно итерироваться по контейнеру skiplist.">Iterator</a></td><td>на элемент, следующий за последним</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Сложность</b><br  />
+ константная. </p>
+
+</div>
+</div>
+<a id="a1f44ccbc9ef1ad024bf744944ed7ea98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f44ccbc9ef1ad024bf744944ed7ea98">&#9670;&nbsp;</a></span>erase() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t p&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::<a class="el" href="classskiplist_1_1_iterator.html">Iterator</a> <a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::erase </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удаляет элемент </p>
+<p>Если элемент с таким значением отсутствует в контейнере, удаление не происходит. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>- удаляемое значение </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="classskiplist_1_1_iterator.html" title="позволяет однонапрявленно итерироваться по контейнеру skiplist.">Iterator</a></td><td>на следующий элемент после удаляемого.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Сложность</b><br  />
+ O(logN), где N - количество элементов в контейнере </p>
+
+</div>
+</div>
+<a id="aa249b6d835f8ebd73a6d5b63e95257dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa249b6d835f8ebd73a6d5b63e95257dd">&#9670;&nbsp;</a></span>erase() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t Skip_Factor = 2&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classskiplist_1_1_iterator.html">Iterator</a> <a class="el" href="classskiplist.html">skiplist</a>&lt; T, Skip_Factor &gt;::erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classskiplist_1_1_iterator.html">Iterator</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удаляет элемент </p>
+<p>Если элемент, на который указывает итератор, отсутствует в контейнере, удаление не происходит. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">it</td><td>- итератор на элемент для удаления </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="classskiplist_1_1_iterator.html" title="позволяет однонапрявленно итерироваться по контейнеру skiplist.">Iterator</a></td><td>на следующий элемент после удаляемого.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Сложность</b><br  />
+ O(logN), где N - количество элементов в контейнере </p>
+
+</div>
+</div>
+<a id="a6f1ad468d8a3c7fdf352dad7e0cd6caa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f1ad468d8a3c7fdf352dad7e0cd6caa">&#9670;&nbsp;</a></span>find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t p&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::<a class="el" href="classskiplist_1_1_iterator.html">Iterator</a> <a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::find </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>находит элемент с заданным ключом </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>- ключевое значение элемента для поиска. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="classskiplist_1_1_iterator.html" title="позволяет однонапрявленно итерироваться по контейнеру skiplist.">Iterator</a></td><td>на элемент со значением value. Если такой элемент не найден, возвращается итератор, указывающий за конец списка (см. <a class="el" href="classskiplist.html#aaea95e93dde5788e11961fe6f38d4603" title="Возвращает итератор на элемент, следующий за последним">end()</a>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Сложность</b><br  />
+ O(logN), где N - количество элементов в контейнере. </p>
+
+</div>
+</div>
+<a id="a8a22e8412f14e8427d1a5166faaf3b3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a22e8412f14e8427d1a5166faaf3b3d">&#9670;&nbsp;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t p&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::<a class="el" href="classskiplist_1_1_iterator.html">Iterator</a> <a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::insert </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>insertingValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вставляет элемент </p>
+<p>Если элемент с таким значением уже существует, вставка не происходит. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>- вставляемое значение </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="classskiplist_1_1_iterator.html" title="позволяет однонапрявленно итерироваться по контейнеру skiplist.">Iterator</a></td><td>на вставленный элемент</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Сложность</b><br  />
+ O(logN), где N - количество элементов в контейнере </p>
+
+</div>
+</div>
+<a id="ab0983046065fb82bf3eec40df9edc810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0983046065fb82bf3eec40df9edc810">&#9670;&nbsp;</a></span>lower_bound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t p&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::<a class="el" href="classskiplist_1_1_iterator.html">Iterator</a> <a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::lower_bound </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>возвращает итератор на первый элемент не меньше, чем заданное значение </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>- ключевое значение для сравнения элементов. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="classskiplist_1_1_iterator.html" title="позволяет однонапрявленно итерироваться по контейнеру skiplist.">Iterator</a></td><td>на первый элемент, который не меньше, чем value. Если такой элемент не найден, возвращается итератор за конец списка (см. <a class="el" href="classskiplist.html#aaea95e93dde5788e11961fe6f38d4603" title="Возвращает итератор на элемент, следующий за последним">end()</a>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Сложность</b><br  />
+ O(logN), где N - количество элементов в контейнере. </p>
+
+</div>
+</div>
+<a id="ab92fab9817c138a9e0bd2433f176e7d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab92fab9817c138a9e0bd2433f176e7d0">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t Skip_Factor = 2&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt; &amp; <a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classskiplist.html">skiplist</a>&lt; T, Skip_Factor &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор присваивания. </p>
+<p>Осуществляет глубокое копирование. </p>
+
+</div>
+</div>
+<a id="a56e16d27329aa9b39e39e7f27ef72a3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56e16d27329aa9b39e39e7f27ef72a3d">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t p&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ptrdiff_t <a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает количество элементов в контейнере. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(Нет)</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">std::ptrdiff_t</td><td>- количество элементов в контейнере.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Сложность</b><br  />
+ константная. </p>
+
+</div>
+</div>
+<a id="a483e6e58b1416998a0383c10083d4f6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483e6e58b1416998a0383c10083d4f6b">&#9670;&nbsp;</a></span>upper_bound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t p&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::<a class="el" href="classskiplist_1_1_iterator.html">Iterator</a> <a class="el" href="classskiplist.html">skiplist</a>&lt; T, p &gt;::upper_bound </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>возвращает итератор на первый элемент больше, чем определенное значение </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>- ключевое значение для сравнения элементов. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Возвращаемые значения</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="classskiplist_1_1_iterator.html" title="позволяет однонапрявленно итерироваться по контейнеру skiplist.">Iterator</a></td><td>на первый элемент, который больше, чем value. Если такой элемент не найден, возвращается итератор за конец списка (см. <a class="el" href="classskiplist.html#aaea95e93dde5788e11961fe6f38d4603" title="Возвращает итератор на элемент, следующий за последним">end()</a>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Сложность</b><br  />
+ O(logN), где N - количество элементов в контейнере. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="skiplist_8h_source.html">skiplist.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

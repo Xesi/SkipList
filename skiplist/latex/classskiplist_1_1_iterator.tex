@@ -1,0 +1,165 @@
+\hypertarget{classskiplist_1_1_iterator}{}\doxysection{Класс skiplist$<$ T, Skip\+\_\+\+Factor $>$\+::Iterator}
+\label{classskiplist_1_1_iterator}\index{skiplist$<$ T, Skip\_Factor $>$::Iterator@{skiplist$<$ T, Skip\_Factor $>$::Iterator}}
+
+
+позволяет однонапрявленно итерироваться по контейнеру skiplist.  
+
+
+
+
+{\ttfamily \#include $<$skiplist.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classskiplist_1_1_iterator_aeca9f87c2d30509c5cfe175ff2376800}{Iterator}} ()=default
+\begin{DoxyCompactList}\small\item\em Умолчательный конструктор. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskiplist_1_1_iterator_a0bc5ef7a4e3bdb142a4bade19d95ebc1}\label{classskiplist_1_1_iterator_a0bc5ef7a4e3bdb142a4bade19d95ebc1}} 
+\mbox{\hyperlink{classskiplist_1_1_iterator_a0bc5ef7a4e3bdb142a4bade19d95ebc1}{$\sim$\+Iterator}} ()=default
+\begin{DoxyCompactList}\small\item\em Деструктор итератора; не удаляет объект, на который ссылается. ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskiplist_1_1_iterator_afc15f6858f5b94eb59ba334d0b8b648b}\label{classskiplist_1_1_iterator_afc15f6858f5b94eb59ba334d0b8b648b}} 
+\mbox{\hyperlink{classskiplist_1_1_iterator_afc15f6858f5b94eb59ba334d0b8b648b}{Iterator}} (const \mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \&)=default
+\begin{DoxyCompactList}\small\item\em Копирующий конструктор. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskiplist_1_1_iterator_a8a054c5826aa193a872b181612e53b6c}\label{classskiplist_1_1_iterator_a8a054c5826aa193a872b181612e53b6c}} 
+\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \& \mbox{\hyperlink{classskiplist_1_1_iterator_a8a054c5826aa193a872b181612e53b6c}{operator=}} (const \mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \&)=default
+\begin{DoxyCompactList}\small\item\em Оператор присваивания. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classskiplist_1_1_iterator_ab39be567852fe682b5d332b7329605cf}{operator bool}} ()
+\begin{DoxyCompactList}\small\item\em Оператор приведения к типу bool. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \& \mbox{\hyperlink{classskiplist_1_1_iterator_ab89b3b92f3be58a1479c67847f83aed5}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em оператор префиксного инкримента. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \mbox{\hyperlink{classskiplist_1_1_iterator_a99e261407216412a81bec91d49f8614f}{operator++}} (int)
+\begin{DoxyCompactList}\small\item\em оператор постфиксного инкримента. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{classskiplist_1_1_iterator_a9346824331c62754d473e4068d082870}{operator$\ast$}} ()
+\begin{DoxyCompactList}\small\item\em оператор разыменования. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classskiplist_1_1_iterator_a2fca90c4a5d674db7badd12d44a7fd71}{operator==}} (const \mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \&) const
+\begin{DoxyCompactList}\small\item\em оператор сравнения. Сравнивает значение на равенство. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classskiplist_1_1_iterator_a1990162cbb9e1ec6f983e9bdf99ae463}{operator!=}} (const \mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \&) const
+\begin{DoxyCompactList}\small\item\em оператор сравнения. Сравнивает значение на неравенство. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classskiplist_1_1_iterator_aced65f10025dfa640a79516c06c21e93}\label{classskiplist_1_1_iterator_aced65f10025dfa640a79516c06c21e93}} 
+class {\bfseries skiplist$<$ T, Skip\+\_\+\+Factor $>$}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+\subsubsection*{template$<$typename T, size\+\_\+t Skip\+\_\+\+Factor = 2$>$\newline
+class skiplist$<$ T, Skip\+\_\+\+Factor $>$\+::\+Iterator}
+
+позволяет однонапрявленно итерироваться по контейнеру skiplist. 
+
+skiplist$<$\+T, Skip\+\_\+\+Factor$>$\+::\+Iterator реализует концепцию Forward\+Iterator. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classskiplist_1_1_iterator_aeca9f87c2d30509c5cfe175ff2376800}\label{classskiplist_1_1_iterator_aeca9f87c2d30509c5cfe175ff2376800}} 
+\index{skiplist$<$ T, Skip\_Factor $>$::Iterator@{skiplist$<$ T, Skip\_Factor $>$::Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!skiplist$<$ T, Skip\_Factor $>$::Iterator@{skiplist$<$ T, Skip\_Factor $>$::Iterator}}
+\doxysubsubsection{\texorpdfstring{Iterator()}{Iterator()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t Skip\+\_\+\+Factor = 2$>$ \\
+\mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, Skip\+\_\+\+Factor $>$\+::Iterator\+::\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Умолчательный конструктор. 
+
+Создает итератор, указывающий на конец списка. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classskiplist_1_1_iterator_ab39be567852fe682b5d332b7329605cf}\label{classskiplist_1_1_iterator_ab39be567852fe682b5d332b7329605cf}} 
+\index{skiplist$<$ T, Skip\_Factor $>$::Iterator@{skiplist$<$ T, Skip\_Factor $>$::Iterator}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!skiplist$<$ T, Skip\_Factor $>$::Iterator@{skiplist$<$ T, Skip\_Factor $>$::Iterator}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t p$>$ \\
+\mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::Iterator\+::operator bool}
+
+
+
+Оператор приведения к типу bool. 
+
+Возвращает true, если значение итератора не равно nullptr. \mbox{\Hypertarget{classskiplist_1_1_iterator_a1990162cbb9e1ec6f983e9bdf99ae463}\label{classskiplist_1_1_iterator_a1990162cbb9e1ec6f983e9bdf99ae463}} 
+\index{skiplist$<$ T, Skip\_Factor $>$::Iterator@{skiplist$<$ T, Skip\_Factor $>$::Iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!skiplist$<$ T, Skip\_Factor $>$::Iterator@{skiplist$<$ T, Skip\_Factor $>$::Iterator}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t Skip\+\_\+\+Factor = 2$>$ \\
+bool \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::Iterator\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \&}]{ }\end{DoxyParamCaption}) const}
+
+
+
+оператор сравнения. Сравнивает значение на неравенство. 
+
+
+\begin{DoxyRetVals}{Возвращаемые значения}
+{\em bool} & -\/ ссылаются ли два итератора на разные объекты. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classskiplist_1_1_iterator_a9346824331c62754d473e4068d082870}\label{classskiplist_1_1_iterator_a9346824331c62754d473e4068d082870}} 
+\index{skiplist$<$ T, Skip\_Factor $>$::Iterator@{skiplist$<$ T, Skip\_Factor $>$::Iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!skiplist$<$ T, Skip\_Factor $>$::Iterator@{skiplist$<$ T, Skip\_Factor $>$::Iterator}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t p$>$ \\
+T \& \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::Iterator\+::operator$\ast$}
+
+
+
+оператор разыменования. 
+
+
+\begin{DoxyRetVals}{Возвращаемые значения}
+{\em T\&} & -\/ объект из списка, на который указывал итератор. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classskiplist_1_1_iterator_ab89b3b92f3be58a1479c67847f83aed5}\label{classskiplist_1_1_iterator_ab89b3b92f3be58a1479c67847f83aed5}} 
+\index{skiplist$<$ T, Skip\_Factor $>$::Iterator@{skiplist$<$ T, Skip\_Factor $>$::Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!skiplist$<$ T, Skip\_Factor $>$::Iterator@{skiplist$<$ T, Skip\_Factor $>$::Iterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t p$>$ \\
+\mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \& \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::Iterator\+::operator++}
+
+
+
+оператор префиксного инкримента. 
+
+
+\begin{DoxyRetVals}{Возвращаемые значения}
+{\em Iterator\&} & -\/ значение итератора, идущего следующим. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classskiplist_1_1_iterator_a99e261407216412a81bec91d49f8614f}\label{classskiplist_1_1_iterator_a99e261407216412a81bec91d49f8614f}} 
+\index{skiplist$<$ T, Skip\_Factor $>$::Iterator@{skiplist$<$ T, Skip\_Factor $>$::Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!skiplist$<$ T, Skip\_Factor $>$::Iterator@{skiplist$<$ T, Skip\_Factor $>$::Iterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t p$>$ \\
+\mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::Iterator\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+оператор постфиксного инкримента. 
+
+
+\begin{DoxyRetVals}{Возвращаемые значения}
+{\em \mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}}} & -\/ значение итератора, идущего следующим. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classskiplist_1_1_iterator_a2fca90c4a5d674db7badd12d44a7fd71}\label{classskiplist_1_1_iterator_a2fca90c4a5d674db7badd12d44a7fd71}} 
+\index{skiplist$<$ T, Skip\_Factor $>$::Iterator@{skiplist$<$ T, Skip\_Factor $>$::Iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!skiplist$<$ T, Skip\_Factor $>$::Iterator@{skiplist$<$ T, Skip\_Factor $>$::Iterator}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t Skip\+\_\+\+Factor = 2$>$ \\
+bool \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::Iterator\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \&}]{ }\end{DoxyParamCaption}) const}
+
+
+
+оператор сравнения. Сравнивает значение на равенство. 
+
+
+\begin{DoxyRetVals}{Возвращаемые значения}
+{\em bool} & -\/ ссылаются ли два итератора на один объект. \\
+\hline
+\end{DoxyRetVals}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{skiplist_8h}{skiplist.\+h}}\end{DoxyCompactItemize}

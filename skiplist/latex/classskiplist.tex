@@ -1,0 +1,394 @@
+\hypertarget{classskiplist}{}\doxysection{Шаблон класса skiplist$<$ T, Skip\+\_\+\+Factor $>$}
+\label{classskiplist}\index{skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}}
+
+
+вероятностная структура данных, которая содержит упорядоченный набор уникальных объектов.  
+
+
+
+
+{\ttfamily \#include $<$skiplist.\+h$>$}
+
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}}
+\begin{DoxyCompactList}\small\item\em позволяет однонапрявленно итерироваться по контейнеру skiplist. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classskiplist_a8ffa07fe78f36d56cf71ae1424e5595f}{skiplist}} ()
+\begin{DoxyCompactList}\small\item\em Умолчательный конструктор. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classskiplist_aeca12848c16796e5e53e952429610765}\label{classskiplist_aeca12848c16796e5e53e952429610765}} 
+\mbox{\hyperlink{classskiplist_aeca12848c16796e5e53e952429610765}{$\sim$skiplist}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор экземпляра, освобождает память. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classskiplist_a58e53ef59bfbc54edb701de7bb69d004}{skiplist}} (const \mbox{\hyperlink{classskiplist}{skiplist}} \&)
+\begin{DoxyCompactList}\small\item\em Копирующий конструктор. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classskiplist}{skiplist}} \& \mbox{\hyperlink{classskiplist_ab92fab9817c138a9e0bd2433f176e7d0}{operator=}} (const \mbox{\hyperlink{classskiplist}{skiplist}} \&)
+\begin{DoxyCompactList}\small\item\em Оператор присваивания. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Input\+It $>$ }\\\mbox{\hyperlink{classskiplist_ad5d09f2e3ee43cd10b429d3c54c466ee}{skiplist}} (Input\+It first, Input\+It last)
+\begin{DoxyCompactList}\small\item\em конструктор, принимающий в качестве параметров два итератора. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \mbox{\hyperlink{classskiplist_a95d4579e615f3e1b94146cac95c5ce51}{begin}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает итератор на первый элемент \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \mbox{\hyperlink{classskiplist_aaea95e93dde5788e11961fe6f38d4603}{end}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает итератор на элемент, следующий за последним \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \mbox{\hyperlink{classskiplist_ab0983046065fb82bf3eec40df9edc810}{lower\+\_\+bound}} (const T \&) const
+\begin{DoxyCompactList}\small\item\em возвращает итератор на первый элемент не меньше, чем заданное значение \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \mbox{\hyperlink{classskiplist_a483e6e58b1416998a0383c10083d4f6b}{upper\+\_\+bound}} (const T \&) const
+\begin{DoxyCompactList}\small\item\em возвращает итератор на первый элемент больше, чем определенное значение \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classskiplist_ae19751fe09d8d0aa793e2b5974657104}{empty}} () const
+\begin{DoxyCompactList}\small\item\em Проверяет отсутствие элементов в контейнере \end{DoxyCompactList}\item 
+std\+::ptrdiff\+\_\+t \mbox{\hyperlink{classskiplist_a56e16d27329aa9b39e39e7f27ef72a3d}{size}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает количество элементов в контейнере. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classskiplist_a330faf3f2fb473711e951ffc27a7fe5e}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Очищает контейнер \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \mbox{\hyperlink{classskiplist_a6f1ad468d8a3c7fdf352dad7e0cd6caa}{find}} (const T \&) const
+\begin{DoxyCompactList}\small\item\em находит элемент с заданным ключом \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \mbox{\hyperlink{classskiplist_a8a22e8412f14e8427d1a5166faaf3b3d}{insert}} (const T \&)
+\begin{DoxyCompactList}\small\item\em Вставляет элемент \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \mbox{\hyperlink{classskiplist_a1f44ccbc9ef1ad024bf744944ed7ea98}{erase}} (const T \&)
+\begin{DoxyCompactList}\small\item\em Удаляет элемент \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \mbox{\hyperlink{classskiplist_aa249b6d835f8ebd73a6d5b63e95257dd}{erase}} (\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}})
+\begin{DoxyCompactList}\small\item\em Удаляет элемент \end{DoxyCompactList}\item 
+std\+::ptrdiff\+\_\+t \mbox{\hyperlink{classskiplist_a84d74ca6a124a66789e225a3e5bd3002}{count}} (const T \&) const
+\begin{DoxyCompactList}\small\item\em находит количество элементов по ключу \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+\subsubsection*{template$<$typename T, size\+\_\+t Skip\+\_\+\+Factor = 2$>$\newline
+class skiplist$<$ T, Skip\+\_\+\+Factor $>$}
+
+вероятностная структура данных, которая содержит упорядоченный набор уникальных объектов. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em T} & -\/ тип, хранимый в структуре \\
+\hline
+\mbox{\texttt{ in}}  & {\em Skip\+\_\+\+Factor} & -\/ основание дроби 1/\+Skip\+\_\+\+Factor -\/ вероятности появления нового уровня у узла в списке\\
+\hline
+\end{DoxyParams}
+skiplist -\/ вероятностная структура данных, которая содержит упорядоченный набор уникальных объектов типа {\bfseries{T}}. Операции поиска, удаления и вставки имеют логарифмическую сложность. В основе списка с пропусками лежит расширение отсортированного связного списка дополнительными связями, добавленными в случайных путях с биномиальным распределением, чтобы поиск по списку мог быстро пропускать части этого списка.
+
+
+
+Нижний слой — это обычный упорядоченный связный список. Каждый более высокий слой представляет собой «выделенную полосу движения» для списков ниже, где элемент в i-\/м слое появляется в i+1-\/м слое с вероятностью {\bfseries{1/\+Skip\+\_\+\+Factor}}.
+
+Без указания значения {\bfseries{Skip\+\_\+\+Factor}} равен 2. При операции поиска, вставки и удаления ожидаемое число шагов в каждом связном списке от места начала в текущем списке до места перехода на более низкий уровень равно значению Skip\+\_\+\+Factor. общие ожидаемые затраты на поиск — $log_p n * p$, где p -\/ шаблонный параметр Skip\+\_\+\+Factor. Асимптотика O(log(n)), так как p является константным значением. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classskiplist_a8ffa07fe78f36d56cf71ae1424e5595f}\label{classskiplist_a8ffa07fe78f36d56cf71ae1424e5595f}} 
+\index{skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}!skiplist@{skiplist}}
+\index{skiplist@{skiplist}!skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}}
+\doxysubsubsection{\texorpdfstring{skiplist()}{skiplist()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t p$>$ \\
+\mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::\mbox{\hyperlink{classskiplist}{skiplist}}}
+
+
+
+Умолчательный конструктор. 
+
+Создает пустой список. \mbox{\Hypertarget{classskiplist_a58e53ef59bfbc54edb701de7bb69d004}\label{classskiplist_a58e53ef59bfbc54edb701de7bb69d004}} 
+\index{skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}!skiplist@{skiplist}}
+\index{skiplist@{skiplist}!skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}}
+\doxysubsubsection{\texorpdfstring{skiplist()}{skiplist()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t Skip\+\_\+\+Factor = 2$>$ \\
+\mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, Skip\+\_\+\+Factor $>$\+::\mbox{\hyperlink{classskiplist}{skiplist}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, Skip\+\_\+\+Factor $>$ \&}]{ }\end{DoxyParamCaption})}
+
+
+
+Копирующий конструктор. 
+
+Создается новый список с пропусками с идентичным набором элементов. Внутреннее строение полностью меняется в связи с рандомизированным принципом построения. \mbox{\Hypertarget{classskiplist_ad5d09f2e3ee43cd10b429d3c54c466ee}\label{classskiplist_ad5d09f2e3ee43cd10b429d3c54c466ee}} 
+\index{skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}!skiplist@{skiplist}}
+\index{skiplist@{skiplist}!skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}}
+\doxysubsubsection{\texorpdfstring{skiplist()}{skiplist()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t Skip\+\_\+\+Factor = 2$>$ \\
+template$<$typename Input\+It $>$ \\
+\mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, Skip\+\_\+\+Factor $>$\+::\mbox{\hyperlink{classskiplist}{skiplist}} (\begin{DoxyParamCaption}\item[{Input\+It}]{first,  }\item[{Input\+It}]{last }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+конструктор, принимающий в качестве параметров два итератора. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em first} & итератор, указывающий на первый элемент упорядоченного набора элементов \\
+\hline
+\mbox{\texttt{ in}}  & {\em last} & итератор, указывающий на элемент после последнего в упорядоченном наборе элементов\\
+\hline
+\end{DoxyParams}
+Позволяет создавать список с пропусками от другого контейнера c упорядоченным набором элементов. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classskiplist_a95d4579e615f3e1b94146cac95c5ce51}\label{classskiplist_a95d4579e615f3e1b94146cac95c5ce51}} 
+\index{skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}!begin@{begin}}
+\index{begin@{begin}!skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t p$>$ \\
+\mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::begin}
+
+
+
+Возвращает итератор на первый элемент 
+
+При пустом контейнере возвращает итератор за конец (см. \mbox{\hyperlink{classskiplist_aaea95e93dde5788e11961fe6f38d4603}{end()}}). 
+\begin{DoxyParams}{Аргументы}
+{\em (Нет)} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Возвращаемые значения}
+{\em \mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}}} & на первый элемент\\
+\hline
+\end{DoxyRetVals}
+{\bfseries{Сложность}}~\newline
+ O(log\+N), где N -\/ количество элементов в контейнере. \mbox{\Hypertarget{classskiplist_a330faf3f2fb473711e951ffc27a7fe5e}\label{classskiplist_a330faf3f2fb473711e951ffc27a7fe5e}} 
+\index{skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}!clear@{clear}}
+\index{clear@{clear}!skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t p$>$ \\
+void \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::clear}
+
+
+
+Очищает контейнер 
+
+Делает недействительными все ссылки, указатели или итераторы указывающие на удалённые элементы. ~\newline
+~\newline
+{\bfseries{Сложность}}~\newline
+ линейная от размера контейнера. \mbox{\Hypertarget{classskiplist_a84d74ca6a124a66789e225a3e5bd3002}\label{classskiplist_a84d74ca6a124a66789e225a3e5bd3002}} 
+\index{skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}!count@{count}}
+\index{count@{count}!skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t p$>$ \\
+std\+::ptrdiff\+\_\+t \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::count (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption}) const}
+
+
+
+находит количество элементов по ключу 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em value} & -\/ значение ключа \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Возвращаемые значения}
+{\em количество} & элементов с ключом value\\
+\hline
+\end{DoxyRetVals}
+{\bfseries{Сложность}}~\newline
+ O(log\+N), где N -\/ количество элементов в контейнере \mbox{\Hypertarget{classskiplist_ae19751fe09d8d0aa793e2b5974657104}\label{classskiplist_ae19751fe09d8d0aa793e2b5974657104}} 
+\index{skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}!empty@{empty}}
+\index{empty@{empty}!skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t p$>$ \\
+bool \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::empty}
+
+
+
+Проверяет отсутствие элементов в контейнере 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em (Нет)} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Возвращаемые значения}
+{\em bool} & {\bfseries{true}}, если контейнер пуст, {\bfseries{false}} иначе\\
+\hline
+\end{DoxyRetVals}
+{\bfseries{Сложность}}~\newline
+ константная. \mbox{\Hypertarget{classskiplist_aaea95e93dde5788e11961fe6f38d4603}\label{classskiplist_aaea95e93dde5788e11961fe6f38d4603}} 
+\index{skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}!end@{end}}
+\index{end@{end}!skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t p$>$ \\
+\mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::end}
+
+
+
+Возвращает итератор на элемент, следующий за последним 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em (Нет)} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Возвращаемые значения}
+{\em \mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}}} & на элемент, следующий за последним\\
+\hline
+\end{DoxyRetVals}
+{\bfseries{Сложность}}~\newline
+ константная. \mbox{\Hypertarget{classskiplist_a1f44ccbc9ef1ad024bf744944ed7ea98}\label{classskiplist_a1f44ccbc9ef1ad024bf744944ed7ea98}} 
+\index{skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}!erase@{erase}}
+\index{erase@{erase}!skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t p$>$ \\
+\mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::erase (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Удаляет элемент 
+
+Если элемент с таким значением отсутствует в контейнере, удаление не происходит. 
+\begin{DoxyParams}{Аргументы}
+{\em value} & -\/ удаляемое значение \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Возвращаемые значения}
+{\em \mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}}} & на следующий элемент после удаляемого.\\
+\hline
+\end{DoxyRetVals}
+{\bfseries{Сложность}}~\newline
+ O(log\+N), где N -\/ количество элементов в контейнере \mbox{\Hypertarget{classskiplist_aa249b6d835f8ebd73a6d5b63e95257dd}\label{classskiplist_aa249b6d835f8ebd73a6d5b63e95257dd}} 
+\index{skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}!erase@{erase}}
+\index{erase@{erase}!skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t Skip\+\_\+\+Factor = 2$>$ \\
+\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, Skip\+\_\+\+Factor $>$\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Удаляет элемент 
+
+Если элемент, на который указывает итератор, отсутствует в контейнере, удаление не происходит. 
+\begin{DoxyParams}{Аргументы}
+{\em it} & -\/ итератор на элемент для удаления \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Возвращаемые значения}
+{\em \mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}}} & на следующий элемент после удаляемого.\\
+\hline
+\end{DoxyRetVals}
+{\bfseries{Сложность}}~\newline
+ O(log\+N), где N -\/ количество элементов в контейнере \mbox{\Hypertarget{classskiplist_a6f1ad468d8a3c7fdf352dad7e0cd6caa}\label{classskiplist_a6f1ad468d8a3c7fdf352dad7e0cd6caa}} 
+\index{skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}!find@{find}}
+\index{find@{find}!skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t p$>$ \\
+\mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::find (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption}) const}
+
+
+
+находит элемент с заданным ключом 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em value} & -\/ ключевое значение элемента для поиска. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Возвращаемые значения}
+{\em \mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}}} & на элемент со значением value. Если такой элемент не найден, возвращается итератор, указывающий за конец списка (см. \mbox{\hyperlink{classskiplist_aaea95e93dde5788e11961fe6f38d4603}{end()}}).\\
+\hline
+\end{DoxyRetVals}
+{\bfseries{Сложность}}~\newline
+ O(log\+N), где N -\/ количество элементов в контейнере. \mbox{\Hypertarget{classskiplist_a8a22e8412f14e8427d1a5166faaf3b3d}\label{classskiplist_a8a22e8412f14e8427d1a5166faaf3b3d}} 
+\index{skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}!insert@{insert}}
+\index{insert@{insert}!skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t p$>$ \\
+\mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::insert (\begin{DoxyParamCaption}\item[{const T \&}]{inserting\+Value }\end{DoxyParamCaption})}
+
+
+
+Вставляет элемент 
+
+Если элемент с таким значением уже существует, вставка не происходит. 
+\begin{DoxyParams}{Аргументы}
+{\em value} & -\/ вставляемое значение \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Возвращаемые значения}
+{\em \mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}}} & на вставленный элемент\\
+\hline
+\end{DoxyRetVals}
+{\bfseries{Сложность}}~\newline
+ O(log\+N), где N -\/ количество элементов в контейнере \mbox{\Hypertarget{classskiplist_ab0983046065fb82bf3eec40df9edc810}\label{classskiplist_ab0983046065fb82bf3eec40df9edc810}} 
+\index{skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}!lower\_bound@{lower\_bound}}
+\index{lower\_bound@{lower\_bound}!skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}}
+\doxysubsubsection{\texorpdfstring{lower\_bound()}{lower\_bound()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t p$>$ \\
+\mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::lower\+\_\+bound (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption}) const}
+
+
+
+возвращает итератор на первый элемент не меньше, чем заданное значение 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em value} & -\/ ключевое значение для сравнения элементов. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Возвращаемые значения}
+{\em \mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}}} & на первый элемент, который не меньше, чем value. Если такой элемент не найден, возвращается итератор за конец списка (см. \mbox{\hyperlink{classskiplist_aaea95e93dde5788e11961fe6f38d4603}{end()}}).\\
+\hline
+\end{DoxyRetVals}
+{\bfseries{Сложность}}~\newline
+ O(log\+N), где N -\/ количество элементов в контейнере. \mbox{\Hypertarget{classskiplist_ab92fab9817c138a9e0bd2433f176e7d0}\label{classskiplist_ab92fab9817c138a9e0bd2433f176e7d0}} 
+\index{skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t Skip\+\_\+\+Factor = 2$>$ \\
+\mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$ \& \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, Skip\+\_\+\+Factor $>$ \&}]{ }\end{DoxyParamCaption})}
+
+
+
+Оператор присваивания. 
+
+Осуществляет глубокое копирование. \mbox{\Hypertarget{classskiplist_a56e16d27329aa9b39e39e7f27ef72a3d}\label{classskiplist_a56e16d27329aa9b39e39e7f27ef72a3d}} 
+\index{skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}!size@{size}}
+\index{size@{size}!skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t p$>$ \\
+std\+::ptrdiff\+\_\+t \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::size}
+
+
+
+Возвращает количество элементов в контейнере. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em (Нет)} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Возвращаемые значения}
+{\em std\+::ptrdiff\+\_\+t} & -\/ количество элементов в контейнере.\\
+\hline
+\end{DoxyRetVals}
+{\bfseries{Сложность}}~\newline
+ константная. \mbox{\Hypertarget{classskiplist_a483e6e58b1416998a0383c10083d4f6b}\label{classskiplist_a483e6e58b1416998a0383c10083d4f6b}} 
+\index{skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}!upper\_bound@{upper\_bound}}
+\index{upper\_bound@{upper\_bound}!skiplist$<$ T, Skip\_Factor $>$@{skiplist$<$ T, Skip\_Factor $>$}}
+\doxysubsubsection{\texorpdfstring{upper\_bound()}{upper\_bound()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t p$>$ \\
+\mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::\mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}} \mbox{\hyperlink{classskiplist}{skiplist}}$<$ T, p $>$\+::upper\+\_\+bound (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption}) const}
+
+
+
+возвращает итератор на первый элемент больше, чем определенное значение 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em value} & -\/ ключевое значение для сравнения элементов. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Возвращаемые значения}
+{\em \mbox{\hyperlink{classskiplist_1_1_iterator}{Iterator}}} & на первый элемент, который больше, чем value. Если такой элемент не найден, возвращается итератор за конец списка (см. \mbox{\hyperlink{classskiplist_aaea95e93dde5788e11961fe6f38d4603}{end()}}).\\
+\hline
+\end{DoxyRetVals}
+{\bfseries{Сложность}}~\newline
+ O(log\+N), где N -\/ количество элементов в контейнере. 
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{skiplist_8h}{skiplist.\+h}}\end{DoxyCompactItemize}

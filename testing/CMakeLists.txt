@@ -1,0 +1,7 @@
+add_executable(catch2_skiplist catch2_skiplist.cpp)
+add_executable(speed_memory_test speed_memory_test.cpp)
+target_link_libraries(catch2_skiplist skiplist)
+target_link_libraries(speed_memory_test skiplist)
+include(CTest)
+include(Catch)
+catch_discover_tests(catch2_skiplist)
